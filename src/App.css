@@ -1,0 +1,791 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.spacery{
+  padding: 40px 0;
+}
+
+.container{
+  max-width: 1170px;
+  margin: auto;
+}
+
+.d-flex{
+  display: flex;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.justify-content{
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  display: block;
+}
+
+.w-25{
+  width:25%;
+  margin: 0 12px;
+}
+
+.head h1{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #333;
+  font-size: 30px;
+  text-align: center;
+}
+
+.icon-line{
+  position: relative;
+}
+
+.icon-line::before {
+  content: '';
+  width: 8%;
+  height: 1px;
+  background-image: -webkit-linear-gradient(left,rgba(255,255,255,0),#b1b1b1);
+  position: absolute;
+  top: 10px;
+  left: 40.5%;
+}
+
+.icon-line::after {
+  content: '';
+  width: 8%;
+  height: 1px;
+  background-image: -webkit-linear-gradient(right,rgba(255,255,255,0),#b1b1b1);
+  position: absolute;
+  top: 10px;
+  right: 40.5%;
+}
+
+.icon-line .icon{
+  width: 100%;
+  text-align: center;
+  color: #b1b1b1;
+  transform: scaleX(-1);
+  margin-top: 5px;
+}
+
+/* -------------------------------------HEADER START---------------------------------- */
+.header1{
+  background-color: black;
+  color: white;
+}
+
+.logo a{
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 5px;
+  font-size: 20px;
+}
+
+.main-menu li{
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.main-menu li a{
+  color: whitesmoke;
+  padding: 25px;
+  transition: .3s;
+}
+
+.main-menu li a:hover{
+  color: gray;
+}
+
+/* -------------------------------------HEADER END---------------------------------- */
+
+/* -------------------------------------SLIDER START---------------------------------- */
+.slider img{
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+}
+/* -------------------------------------SLIDER END---------------------------------- */
+
+/* -------------------------------------ICON PART CSS START----------------------------- */
+.icon-p{
+  text-align: center;
+  background-color: #f1f1f1;
+  margin: 15px;
+  padding: 40px 20px;
+  border-radius: 20px;
+  color: #333;
+  transition: .5s;
+}
+
+.icon-p:hover{
+  background-color: black;
+  transform: scale(1.1);
+}
+
+
+.icon-p:hover .icon-1,
+.icon-p:hover h4,
+.icon-p:hover p{
+  color: whitesmoke;
+}
+
+
+.icon-p .icon-1{
+  color: #333;
+  font-size: 50px;
+  font-weight: 100;
+  transition: .5s;
+}
+
+.icon-p h4{
+  color: #333;
+  font-size: 23px;
+  font-weight: 400;
+  margin-top: 17px;
+  transition: .5s;
+}
+
+.icon-p p{
+  color: #333;
+  font-size: 15px;
+  letter-spacing: 1px;
+  margin-top: 15px;
+  font-weight: 300;
+  transition: .5s;
+}
+/* -------------------------------------ICON PART CSS END------------------------------- */
+
+/* -----------------------------------OUR SERVICE CSS START----------------------------- */
+.service h2{
+  text-transform: uppercase;
+  text-align: center;
+  color: #333;
+  margin-top: 30px;
+  font-size: 20px;
+  letter-spacing: 3px;
+  word-spacing: 3px;
+}
+
+.service p{
+  font-size: 15px;
+  text-align: center;
+  color: #333;
+  margin-top: 23px;
+  letter-spacing: 1px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.service-img{
+  margin-top: 50px;
+}
+
+.service img{
+  width: 100%;
+}
+
+.service-img .w-25{
+  transition: .5s;
+  border: 2px solid transparent;
+  border-radius: 0 0 20px 20px;
+
+}
+
+.service-img .w-25:hover{
+  transform: scale(1.1);
+  border: 2px solid gainsboro;
+}
+
+.service-img .w-25:hover .service-content{
+  background-color: black;
+  color: whitesmoke;
+}
+
+.service-content{
+  color: #333;
+  text-align: center;
+  padding: 10px 20px 15px 20px;
+  background-color: #EFF0F2;
+  margin-top: -5px;
+  border-radius: 0 0 20px 20px;
+  transition: .5s;
+}
+
+.service-content h5{
+  letter-spacing: 2px;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.service-content h6{
+  font-size: 13px;
+  font-weight: 400;
+  margin-top: 5px;
+}
+
+.service-content .social{
+  margin-top: 12px;
+}
+
+.service-content .social-icon{
+  margin: 7px;
+}
+/* -----------------------------------OUR SERVICE CSS END------------------------------- */
+/* -----------------------------------OUR SERVICE-2 CSS START--------------------------- */
+.service2 .w-25{
+  width: calc(25% - 24px);
+  text-align: center;
+  background-color: #f1f1f1;
+  padding:30px 0;
+  margin-bottom: 24px;
+  border-radius: 20px;
+  transition: .5s;
+}
+
+.service2 .w-25:hover{
+  background-color: black;
+  color: whitesmoke;
+  transform: scale(1.1);
+}
+
+.service2 .w-25:hover .service2-icon{
+  color: whitesmoke;
+}
+
+.service2-icon{
+  font-size: 55px;
+  color: #333;
+  transition: .5s;
+}
+
+.service2-content{
+  margin-top: 30px;
+}
+
+.service2-content h4{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+
+.service2-content p{
+  padding:  15px 40px 10px;
+  line-height: 2;
+  font-weight: 400;
+}
+
+.template{
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 100px 0;
+  margin: 0 12px;
+}
+
+.template h1{
+  font-weight: 400;
+  color: whitesmoke;
+}
+
+.template p{
+  color: whitesmoke;
+  margin-top: 15px;
+}
+
+.template button{
+  background-color: whitesmoke;
+  color: black;
+  padding: 15px 30px;
+  border: 1px solid transparent;
+  border-radius: 25px;
+  margin-top: 25px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 1px;
+  transition: .2s;
+}
+
+.template button:hover{
+  background-color: transparent;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+}
+/* -----------------------------------OUR SERVICE-2 CSS END----------------------------- */
+/* -----------------------------------SUCCESS STORY CSS START--------------------------- */
+.success .btn-all{
+  text-align: center;
+}
+
+.success .btn{
+  margin: 30px 10px;
+  border: none;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.success .btn:hover{
+  background-color: black;
+}
+
+.success .btn:hover a{
+  color: whitesmoke;
+}
+
+.success .btn a{
+  color: #333;
+  text-transform: uppercase;
+  padding: 15px 17px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  transition: .3s;
+}
+
+.success-img{
+  margin-top: 20px;
+}
+
+.success-1 img{
+  width: 100%;
+  margin-bottom:30px;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.success-1{
+  width: calc(33% - 30px);
+  margin: 0 15px;
+  position: relative;
+}
+
+.success-1::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(100% - 33px);
+  content: '';
+  background-color: rgba(21, 21, 21,0.5);
+  border-radius: 15px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.success-1:hover::before{
+  opacity: 1;
+}
+/* -----------------------------------SUCCESS STORY CSS END----------------------------- */
+/* -----------------------------------OUR CLIENT CSS START------------------------------ */
+.client{
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+}
+
+.client .head h1{
+  color: whitesmoke;
+}
+
+.client img{
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  margin-top: 35px;
+}
+
+.client h5{
+  text-transform: uppercase;
+  color: #777;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+
+.client h4{
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-top: 14px;
+}
+
+.client p{
+  color: whitesmoke;
+  padding: 0 300px;
+  line-height: 2;
+  font-weight: 500;
+  margin: 10px 0;
+}
+
+.client-star{
+  color: #777;
+  margin: 20px 3px;
+  font-size: 20px;
+}
+
+.client-quote{
+  color: whitesmoke;
+}
+/* -----------------------------------OUR CLIENT CSS END-------------------------------- */
+/* -----------------------------------OUR PRICING CSS START----------------------------- */
+.pricing-p .w-33{
+  width: 33%;
+  text-align: center;
+  margin: 30px 15px 0;
+  padding: 30px 40px;
+  background-color:#EFF0F2;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.pricing-p .w-33:hover{
+  transform: scale(1.1);
+}
+
+.pricing-p .content-white:hover{
+  background-color: black;
+}
+
+.pricing-p .content-white:hover h2,
+.pricing-p .content-white:hover h1,
+.pricing-p .content-white:hover li{
+  color: whitesmoke;
+}
+
+.pricing-p .content-white:hover button a{
+  background-color: whitesmoke;
+  color: black;
+}
+
+.pricing-p .content h2{
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 30px;
+  color: #333;
+} 
+
+.pricing-p .content h1 span{
+  font-size: 20px;
+}
+
+.pricing-p .content h1{
+  font-size: 70px;
+  color: #333;
+  margin-top: 10px;
+}
+
+.pricing-p ul li{
+  padding: 10px;
+  font-size: 17px;
+  color: #333;
+}
+
+.pricing-p button a{
+  color: white;
+  background-color: black;
+  padding: 15px 23px;
+  border-radius: 23px;
+  text-transform: uppercase;
+}
+
+.pricing-p button {
+  border: none;
+  margin-top: 20px;
+  border-radius: 23px;
+}
+
+.pricing-p .content-black{
+  background-color: black;
+}
+
+.pricing-p .content-black .content h2,.pricing-p .content-black .content h1 span,.pricing-p .content-black .content h1,.pricing-p .content-black .content ul li{
+  color: whitesmoke;
+}
+
+.pricing-p .content-black .content button a{
+  background-color: white;
+  color: black;
+}
+/* -----------------------------------OUR PRICING CSS END------------------------------- */
+
+/* -----------------------------------SUBSCRIBE CSS START------------------------------- */
+.subscribe{
+  background-color: rgba(0, 0, 0, 0.7);
+  text-align: center;
+  padding: 80px 0;
+}
+
+.subscribe h2{
+  color: whitesmoke;
+  font-weight: 400;
+  letter-spacing: 2px;
+  word-spacing: 3px;
+  font-size: 20px;
+}
+
+.subscribe input{
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 2px 0 whitesmoke;
+  padding: 10px 100px;
+  font-size: 15px;
+  margin-top: 40px;
+}
+
+.subscribe button{
+  border: none;
+  border-radius: 23px;
+  margin-top: 30px;
+  transition: .2s;
+  border: 1px solid transparent;
+}
+
+.subscribe button:hover{
+      border: 1px solid whitesmoke;
+      background-color: transparent;
+}
+
+.subscribe button:hover a{
+  color: whitesmoke;
+  background-color: transparent;
+}
+
+.subscribe button a{
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 23px;
+  letter-spacing: 1px;
+}
+/* -----------------------------------SUBSCRIBE CSS END--------------------------------- */
+
+/* -----------------------------------LATEST CSS START---------------------------------- */
+.latest-p .w-33{
+  width: 33%;
+  margin: 0 15px;
+  text-align: center;
+  background-color: #EFF0F2;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.latest-p .w-33:hover{
+  transform: scale(1.1);
+  background-color: black;
+  color: white;
+}
+
+.latest-p .w-33:hover ul{
+  background-color: whitesmoke;
+}
+
+.latest-p .w-33:hover li{
+  color: black;
+}
+
+.latest-p .w-33:hover a{
+  background-color: whitesmoke;
+  color: black;
+}
+
+.latest-p .w-33 img{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.latest-p{
+  margin-top: 30px;
+}
+
+.latest-p h2{
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 10px 0;
+}
+
+.latest-p ul{
+  background-color: black;
+  color: whitesmoke;
+  justify-content: space-evenly;
+  padding: 15px 0;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+.latest-p .icon{
+  margin-right: 5px;
+  font-size: 12px;
+}
+
+.latest-p p{
+  padding:15px;
+  line-height: 1.8;
+}
+
+.latest-p button{
+  border: none;
+  border-radius: 23px;
+  margin-top:10px;
+  margin-bottom: 30px;
+}
+
+.latest-p button a{
+  color: whitesmoke;
+  background-color: black;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 23px;
+  letter-spacing: 1px;
+}
+/* -----------------------------------LATEST CSS END------------------------------------ */
+
+/* -----------------------------------FORM CSS START------------------------------------ */
+
+.form p{
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.form input{
+  width: 100%;
+  height: 37px;
+  border-radius: 5px;
+  margin-top: 5px;
+  text-align: center;
+  font-size: 15px;
+  border: 1px solid #333;
+}
+
+.form .part-1,.form .part-3{
+  width: 50%;
+  margin: 10px;
+}
+
+.form .part-2,.form .part-4{
+  margin: 10px;
+}
+
+.form .part-4 input{
+  height: 150px;
+}
+
+.form-1{
+  margin-top: 30px;
+}
+
+.form button{
+  border: 1px solid transparent;
+  border-radius: 23px;
+  margin-top:30px;
+  margin-bottom: 30px;
+  transition: .3s;
+}
+
+.form button:hover{
+  border: 1px solid black;
+  background-color: transparent;
+}
+
+.form button:hover a{
+  background-color: transparent;
+  color: black;
+}
+
+.form button a{
+  color: whitesmoke;
+  background-color: black;
+  text-transform: uppercase;
+  padding: 15px 20px;
+  border-radius: 23px;
+  letter-spacing: 1px;
+}
+
+.form .btn{
+  text-align: center;
+}
+
+.form-social .w-33{
+  width: 33%;
+  margin: 15px;
+  text-align: center;
+  background-color: #EFF0F2;
+  padding: 40px 30px;
+  border-radius: 20px;
+  transition: .3s;
+}
+
+.form-social .w-33:hover{
+  background-color: black;
+  transform: scale(1.1);
+}
+
+.form-social .w-33:hover .icon,
+.form-social .w-33:hover p,
+.form-social .w-33:hover h5{
+  color: white;
+}
+
+.form-social .icon{
+  font-size: 35px;
+  color: #333;
+}
+
+.form-social p{
+  color: #333;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.form-social h5{
+  color: #333;
+  margin-top: 10px;
+  font-size: 17px;
+  font-weight: 400;
+}
+/* -----------------------------------FORM CSS END-------------------------------------- */
+
+/* -------------------------------FOOTER CSS START-------------------------------------- */
+.footer{
+  background-color: black;
+  text-align: center;
+}
+.social-footer{
+  margin-bottom: 10px;
+}
+
+.social-footer .icon{
+  color: whitesmoke;
+  font-size: 20px;
+  padding: 10px;
+  border: 1px solid whitesmoke;
+  margin: 7px;
+}
+
+.footer p{
+  color: whitesmoke;
+  letter-spacing: 2px;
+  font-size: 15px;
+  word-spacing: 3px;
+  margin-top: 10px;
+}
+/* -------------------------------FOOTER CSS END---------------------------------------- */
